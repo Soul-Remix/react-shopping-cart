@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = (props) => {
   return (
-    <div className="flex justify-around flex-wrap p-4 bg-gray-900 text-white items-center font-mono">
+    <div className="flex justify-around flex-wrap p-4 bg-gray-900 text-white items-center font-mono sticky z-10">
       <div>
         <Link
           to="/"
