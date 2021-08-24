@@ -4,13 +4,13 @@ const date = new Date();
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0">
-      <img src={footerImg} alt="" />
-      <p className="text-center w-full absolute bottom-1">
+    <div className="absolute bottom-0 2xl:w-full">
+      <img src={footerImg} alt="" className="2xl:w-full" />
+      <p className="text-center absolute bottom-0 w-full">
         Copyright ©{date.getFullYear()} Soul-Remix{' '}
         <a
           href="https://github.com/Soul-Remix"
-          className="transform hover:scale-x-110"
+          className=" transform hover:scale-x-110"
           target="_blank"
           rel="noreferrer"
         >

@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = (props) => {
   return (
-    <div className="flex justify-around flex-wrap p-4 bg-gray-900 text-white items-center font-mono sticky z-10">
+    <div className="flex justify-around flex-wrap p-4 bg-gray-900 text-white items-center font-mono relative z-10 lg:static">
       <div>
         <Link
           to="/"
@@ -13,7 +13,7 @@ const NavBar = (props) => {
       </div>
       <nav>
         <ul className="text-xl flex items-center md:text-2xl">
-          <li className="inline px-3 py-4 transform hover:scale-110 transition-all duration-300">
+          <li className="inline px-2 py-4 transform hover:scale-110 transition-all duration-300">
             <NavLink
               to="/"
               className="p-3 border-b-2 border-black hover:border-green-400"
@@ -22,7 +22,7 @@ const NavBar = (props) => {
               Home
             </NavLink>
           </li>
-          <li className="inline px-3 py-4 transform hover:scale-110 transition-all duration-300">
+          <li className="inline px-2 py-4 transform hover:scale-110 transition-all duration-300">
             <NavLink
               to="/shop"
               className="p-3 border-b-2 border-black hover:border-green-400"
@@ -31,7 +31,7 @@ const NavBar = (props) => {
               Shop
             </NavLink>
           </li>
-          <li className="inline px-3 py-4 transform hover:scale-110 transition-all duration-300">
+          <li className="inline px-2 py-4 transform hover:scale-110 transition-all duration-300">
             <NavLink
               to="/about"
               className="p-3 border-b-2 border-black hover:border-green-400"
