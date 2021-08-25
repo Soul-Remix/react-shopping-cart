@@ -3,7 +3,7 @@ import ShopSideBar from '../components/ShopSideBar';
 
 const ShopPage = () => {
   return (
-    <div className="flex">
+    <div className="flex animate-show">
       <ShopSideBar />
       <ShopItems />
     </div>

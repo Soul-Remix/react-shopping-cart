@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <div className="w-full md:w-5/6 mx-auto mt-16 gap-6 lg:pb-96 pb-40 md:pb-60 animate-show max-w-2xl 2xl:max-w-4xl">
+    <div className="w-full md:w-5/6 mx-auto mt-16 gap-6 lg:pb-96 pb-40 md:pb-60 animate-show max-w-2xl 2xl:max-w-4xl animate-show">
       <div className="flex justify-around flex-wrap">
         <a
           href="www.google.com"

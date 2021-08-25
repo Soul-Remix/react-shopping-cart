@@ -1,7 +1,9 @@
 import slash from '../images/index.png';
 import homeImg from '../images/homepage-image.png';
+import { useHistory } from 'react-router-dom';
 
 const Landing = () => {
+  const history = useHistory();
   return (
     <div className="mx-auto py-10 relative lg:py-20 lg:grid lg:w-4/5 lg:grid-cols-2 lg:z-20 lg:mt-12 lg:pb-40 animate-show">
       <div className="z-10 relative text-center lg:text-left">
@@ -12,7 +14,10 @@ const Landing = () => {
           We don't do fashion, we are fashion
         </p>
         <img src={slash} alt="" className="hidden lg:block w-5/12" />
-        <button className="px-16 py-5 bg-gray-900 text-white mx-auto block my-8 text-3xl rounded-full font-bold transform hover:scale-110 transition duration-300 lg:mx-0">
+        <button
+          className="px-16 py-5 bg-gray-900 text-white mx-auto block my-8 text-3xl rounded-full font-bold transform hover:scale-110 transition duration-300 lg:mx-0"
+          onClick={() => history.push('/shop')}
+        >
           Shop Now
         </button>
       </div>

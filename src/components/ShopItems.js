@@ -61,23 +61,30 @@ const ShopItems = ({ match }) => {
     );
   }
 
-  return (
-    <div className="mt-10 w-9/12 min-h-screen md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-      {Array.isArray(data) &&
-        data
-          .filter((x) => x.category !== 'electronics')
-          .map((item) => {
-            return (
-              <ItemCard
-                title={item.title}
-                key={item.id}
-                id={item.id}
-                img={item.image}
-                price={item.price}
-              />
-            );
-          })}
-      {!Array.isArray(data) && (
+  if (Array.isArray(data)) {
+    return (
+      <div className="mb-20 w-9/12 min-h-screen flex flex-col items-center mx-auto relative z-10 md:mb-44 md:grid md:grid-cols-2 lg:grid-cols-3 xl:mb-64 2xl:grid-cols-4 2xl:mb-96 gap-10">
+        {Array.isArray(data) &&
+          data
+            .filter((x) => x.category !== 'electronics')
+            .map((item) => {
+              return (
+                <ItemCard
+                  title={item.title}
+                  key={item.id}
+                  id={item.id}
+                  img={item.image}
+                  price={item.price}
+                />
+              );
+            })}
+      </div>
+    );
+  }
+
+  if (!Array.isArray(data)) {
+    return (
+      <div className="w-5/6 mx-auto mb-4 mt-20 rounded-lg overflow-hidden flex flex-col justify-even z-10 relative">
         <ItemPage
           title={data.title}
           description={data.description}
@@ -85,9 +92,9 @@ const ShopItems = ({ match }) => {
           img={data.image}
           price={data.price}
         />
-      )}
-    </div>
-  );
+      </div>
+    );
+  }
 };
 
 export default ShopItems;
