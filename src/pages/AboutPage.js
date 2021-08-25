@@ -2,19 +2,19 @@ const AboutPage = () => {
   return (
     <div className="w-full md:w-5/6 mx-auto mt-16 gap-6 lg:pb-96 pb-40 md:pb-60 animate-show max-w-2xl 2xl:max-w-4xl">
       <div className="flex justify-around flex-wrap">
-        <a href="#" className="hover:shadow-md rounded-full">
+        <a href="#" className="transform hover:-translate-y-4 transition">
           <span className="ib mdi-github"></span>
         </a>
-        <a href="#" className="hover:shadow-md rounded-full">
+        <a href="#" className="transform hover:-translate-y-4 transition">
           <span className="ib fa-facebook"></span>
         </a>
-        <a href="#" className="hover:shadow-md rounded-full">
+        <a href="#" className="transform hover:-translate-y-4 transition">
           <span className="ib bi-twitter"></span>
         </a>
-        <a href="#" className="hover:shadow-md rounded-full">
+        <a href="#" className="transform hover:-translate-y-4 transition">
           <span className="ib la-instagram"></span>
         </a>
-        <a href="#" className="hover:shadow-md rounded-full">
+        <a href="#" className="transform hover:-translate-y-4 transition">
           <span className="ib mdi-linkedin"></span>
         </a>
       </div>
