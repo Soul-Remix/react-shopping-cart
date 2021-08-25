@@ -3,12 +3,12 @@ import homeImg from '../images/homepage-image.png';
 
 const Landing = () => {
   return (
-    <div className="mx-auto py-10 relative lg:py-20 lg:grid lg:w-4/5 lg:grid-cols-2 lg:z-20 lg:mt-12 lg:pb-40">
+    <div className="mx-auto py-10 relative lg:py-20 lg:grid lg:w-4/5 lg:grid-cols-2 lg:z-20 lg:mt-12 lg:pb-40 animate-show">
       <div className="z-10 relative text-center lg:text-left">
         <p className="text-sm uppercase tracking-widest text-gray-500 font-bold 2xl:text-lg">
           Best online store of the year
         </p>
-        <p className="text-4xl font-bold leading-normal mx-auto w-72 my-2 md:text-5xl md:w-96 md:leading-relaxed lg:text-5xl lg:leading-relaxed lg:mx-0 2xl:text-7xl">
+        <p className="text-4xl font-bold leading-normal mx-auto w-72 my-2 md:w-96 lg:w-full md:leading-loose lg:mx-0 2xl:text-7xl">
           We don't do fashion, we are fashion
         </p>
         <img src={slash} alt="" className="hidden lg:block w-5/12" />

@@ -18,6 +18,7 @@ const NavBar = (props) => {
               to="/"
               className="p-3 border-b-2 border-black hover:border-green-400"
               activeClassName="selected"
+              exact
             >
               Home
             </NavLink>
