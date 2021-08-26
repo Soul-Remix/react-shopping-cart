@@ -38,13 +38,13 @@ const AboutPage = () => {
         <p className="mt-4">Fake Address</p>
         <p className="mt-4">Fake Number</p>
       </div>
-      <div className="w-full mx-auto">
+      <div className="w-full mx-auto ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1629822027972!5m2!1sen!2sus"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
-          className="mx-auto mt-20 w-full h-96"
+          className="mx-auto mt-20 w-full "
         ></iframe>
       </div>
     </div>

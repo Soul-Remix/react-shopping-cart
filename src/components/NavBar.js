@@ -41,7 +41,10 @@ const NavBar = (props) => {
               About
             </NavLink>
           </li>
-          <li className="inline p-3 relative bg-gray-600 rounded-full transform hover:scale-110 transition-all duration-300">
+          <li
+            className="inline p-3 relative bg-gray-600 rounded-full transform hover:scale-110 transition-all duration-300"
+            onClick={props.handleClick}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7 inline cursor-pointer stroke-current"
@@ -56,9 +59,9 @@ const NavBar = (props) => {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               />
             </svg>
-            {props.sold > 0 && (
+            {props.sold.length > 0 && (
               <span className="absolute bottom-0 left-0 text-sm  bg-green-400 p-1 rounded-full text-black -m-1">
-                99
+                {props.sold.reduce((a, b) => a + b.quantity, 0)}
               </span>
             )}
           </li>

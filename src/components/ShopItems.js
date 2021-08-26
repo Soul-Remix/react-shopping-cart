@@ -16,7 +16,7 @@ const fetchItems = async (id, category) => {
   }
 };
 
-const ShopItems = ({ match }) => {
+const ShopItems = ({ addToCart, order }) => {
   const { id: itemId, category } = useParams();
   const { data, isLoading, isError } = useQuery(['items', itemId], async () => {
     const data = await fetchItems(itemId, category);
@@ -75,6 +75,8 @@ const ShopItems = ({ match }) => {
                   id={item.id}
                   img={item.image}
                   price={item.price}
+                  addToCart={addToCart}
+                  order={order}
                 />
               );
             })}
@@ -91,6 +93,8 @@ const ShopItems = ({ match }) => {
           id={data.id}
           img={data.image}
           price={data.price}
+          addToCart={addToCart}
+          order={order}
         />
       </div>
     );

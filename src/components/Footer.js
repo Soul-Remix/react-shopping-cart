@@ -4,7 +4,7 @@ const date = new Date();
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0 2xl:w-full">
+    <div className="absolute bottom-0 2xl:w-full z-0 pointer-events-none">
       <img src={footerImg} alt="" className="2xl:w-full" />
       <p className="text-center absolute bottom-0 w-full">
         Copyright ©{date.getFullYear()} Soul-Remix{' '}
