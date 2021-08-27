@@ -1,5 +1,7 @@
 # Shopping Cart
 
+[Live Page](https://soul-remix.github.io/react-shopping-cart/)
+
 ## Project Overview
 
 ### Description
